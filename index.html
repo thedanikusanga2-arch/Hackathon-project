@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Cravings | AI Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo-area">
+            <div class="logo-placeholder">HC</div>
+            <span class="brand-name">Happy <br><strong>Cravings</strong></span>
+        </div>
+        <nav class="nav-links">
+            <a href="#">HOME</a>
+            <a href="#">MENUS</a>
+            <a href="#">MY ORDERS</a>
+        </nav>
+        <div class="user-actions">
+            <div class="profile-icon">👤</div>
+            <div class="cart-icon">🛒 <span class="cart-count">0</span></div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <h1>Today's Canteen <br> Specials</h1>
+        </section>
+
+        <section class="menu-grid">
+            <div class="menu-card" id="card-rice-curry">
+                <img src="https://via.placeholder.com/400x300?text=Rice+and+Curry" alt="Rice & Curry">
+                <div class="card-content">
+                    <div class="card-header"><h3>RICE & CURRY</h3><span>01</span></div>
+                    <p class="price">Rs. 450.00</p>
+                </div>
+            </div>
+
+            <div class="menu-card" id="card-chicken-kottu">
+                <img src="https://via.placeholder.com/400x300?text=Chicken+Kottu" alt="Chicken Kottu">
+                <div class="card-content">
+                    <div class="card-header"><h3>CHICKEN KOTTU</h3><span>02</span></div>
+                    <p class="price">Rs. 500.00</p>
+                </div>
+            </div>
+
+            <div class="menu-card" id="card-egg-rice">
+                <img src="https://via.placeholder.com/400x300?text=Egg+Fried+Rice" alt="Egg Fried Rice">
+                <div class="card-content">
+                    <div class="card-header"><h3>EGG FRIED RICE</h3><span>03</span></div>
+                    <p class="price">Rs. 480.00</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="ai-container">
+            <h2 class="ai-title">AI Food Recognition</h2>
+            <p>Click start to identify your meal using the camera.</p>
+            <button class="ai-btn" type="button" onclick="init()">Start AI Scanner</button>
+            
+            <div id="webcam-container" class="webcam-box"></div>
+            <div id="label-container" class="label-box"></div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
