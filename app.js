@@ -6,7 +6,7 @@ const products = [
         ingredients: "Steamed rice, Mixed Vegetables, Coconut Milk, Curry Powder, Onion, Garlic, Chilli, Spices.",
         spice: "Medium",
         spiceColor: "text-amber-500 bg-amber-50 border-amber-200",
-        image: "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80", 
+        image: "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=600&q=80", 
         delay: "100"
     },
     {
@@ -16,7 +16,7 @@ const products = [
         ingredients: "Roti, Chicken, Egg, Vegetables, Onion, Garlic, Soy Sauce, Spices.",
         spice: "Medium",
         spiceColor: "text-amber-500 bg-amber-50 border-amber-200",
-        image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=600&q=80",
         delay: "200"
     },
     {
@@ -26,17 +26,17 @@ const products = [
         ingredients: "Rice, Egg, Vegetables, Garlic, Soy Sauce, Pepper, Oil.",
         spice: "Mild",
         spiceColor: "text-emerald-600 bg-emerald-50 border-emerald-200",
-        image: "https://images.unsplash.com/photo-1559742811-822873691df8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        image: "https://images.unsplash.com/photo-1559742811-822873691df8?auto=format&fit=crop&w=600&q=80",
         delay: "300"
     },
-{
+    {
         id: 4,
         name: "Hoppers",
         price: 250,
         ingredients: "Rice Flour, Coconut Milk, Yeast, Sugar, Salt.",
         spice: "Mild",
         spiceColor: "text-emerald-600 bg-emerald-50 border-emerald-200",
-        image: "./images/photo_2026-03-23_09-13-29.jpg",
+        image: "https://images.unsplash.com/photo-1625362217305-3b04cbca4837?auto=format&fit=crop&w=600&q=80",
         delay: "300"
     },
     {
@@ -46,7 +46,7 @@ const products = [
         ingredients: "Noodles, Vegetables, Egg/Chicken, Garlic, Soy Sauce, Chilli Sauce.",
         spice: "Mild",
         spiceColor: "text-emerald-600 bg-emerald-50 border-emerald-200",
-        image: "C:\Users\User\Documents\Hack 2",
+        image: "https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=600&q=80",
         delay: "300"
     },
     {
@@ -56,7 +56,7 @@ const products = [
         ingredients: "Rice Flour, Water, Salt.",
         spice: "Mild",
         spiceColor: "text-emerald-600 bg-emerald-50 border-emerald-200",
-        image: "C:\Users\User\Documents\Hack 2",
+        image: "https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?auto=format&fit=crop&w=600&q=80",
         delay: "300"
     },
     {
@@ -66,7 +66,7 @@ const products = [
         ingredients: "Roti Dough, Mixed Vegetables, Onion, Spices.",
         spice: "Medium",
         spiceColor: "text-amber-500 bg-amber-50 border-amber-200",
-        image: "C:\Users\User\Documents\Hack 2",
+        image: "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=600&q=80",
         delay: "300"
     },
     {
@@ -76,7 +76,7 @@ const products = [
         ingredients: "Bun, Fish Filling, Potato, Onion, Spices.",
         spice: "Medium",
         spiceColor: "text-amber-500 bg-amber-50 border-amber-200",
-        image: "C:\Users\User\Documents\Hack 2",
+        image: "https://images.unsplash.com/photo-1612196808214-b8e1d6145a8c?auto=format&fit=crop&w=600&q=80",
         delay: "300"
     },
     {
@@ -86,7 +86,7 @@ const products = [
         ingredients: "Roti Wrapper, Egg, Vegetables, Onion, Spices.",
         spice: "Medium",
         spiceColor: "text-amber-500 bg-amber-50 border-amber-200",
-        image: "C:\Users\User\Documents\Hack 2",
+        image: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=600&q=80",
         delay: "300"
     },
     {
@@ -96,7 +96,7 @@ const products = [
         ingredients: "Fish/Meat, Potato, Onion, Spices, Breadcrumbs.",
         spice: "Medium",
         spiceColor: "text-amber-500 bg-amber-50 border-amber-200",
-        image: "C:\Users\User\Documents\Hack 2",
+        image: "https://images.unsplash.com/photo-1541529086526-db283c563270?auto=format&fit=crop&w=600&q=80",
         delay: "300"
     },
     {
@@ -106,7 +106,7 @@ const products = [
         ingredients: "Pastry, Chicken/Fish/Vegetable Filling, Onion, Spices.",
         spice: "Mild",
         spiceColor: "text-emerald-600 bg-emerald-50 border-emerald-200",
-        image: "C:\Users\User\Documents\Hack 2",
+        image: "https://images.unsplash.com/photo-1601050690117-94f5f6af3bf3?auto=format&fit=crop&w=600&q=80",
         delay: "300"
     },
     {
@@ -116,7 +116,7 @@ const products = [
         ingredients: "Ural Dal, Onion, Green Chilli, Curry Leaves, Spices.",
         spice: "Medium",
         spiceColor: "text-amber-500 bg-amber-50 border-amber-200",
-        image: "C:\Users\User\Documents\Hack 2",
+        image: "https://images.unsplash.com/photo-1589301760014-d929f39ce9b0?auto=format&fit=crop&w=600&q=80",
         delay: "300"
     },
     {
@@ -126,7 +126,7 @@ const products = [
         ingredients: "Coconut Milk, Jaggery, Eggs, Spices(cardamom,nutmeg).",
         spice: "Mild",
         spiceColor: "text-emerald-600 bg-emerald-50 border-emerald-200",
-        image: "C:\Users\User\Documents\Hack 2",
+        image: "https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=600&q=80",
         delay: "300"
     },
     {
@@ -136,7 +136,7 @@ const products = [
         ingredients: "Flour, Cocoa Powdwer, Sugar, Eggs, Butter, Milk.",
         spice: "Mild",
         spiceColor: "text-emerald-600 bg-emerald-50 border-emerald-200",
-        image: "C:\Users\User\Documents\Hack 2",
+        image: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=600&q=80",
         delay: "300"
     },
     {
@@ -146,7 +146,7 @@ const products = [
         ingredients: "Mixed Fruits, Ice Cream, Sugar Syrup.",
         spice: "Mild",
         spiceColor: "text-emerald-600 bg-emerald-50 border-emerald-200",
-        image: "C:\Users\User\Documents\Hack 2",
+        image: "https://images.unsplash.com/photo-1564093497595-593b96d80180?auto=format&fit=crop&w=600&q=80",
         delay: "300"
     },
     {
@@ -156,7 +156,7 @@ const products = [
         ingredients: "Jelly, Water, Sugar.",
         spice: "Mild",
         spiceColor: "text-emerald-600 bg-emerald-50 border-emerald-200",
-        image: "C:\Users\User\Documents\Hack 2",
+        image: "https://images.unsplash.com/photo-1553530666-ba11a90a1816?auto=format&fit=crop&w=600&q=80",
         delay: "300"
     },
     {
@@ -166,7 +166,7 @@ const products = [
         ingredients: "Milk, Cream, Sugar, Flavoring.",
         spice: "Mild",
         spiceColor: "text-emerald-600 bg-emerald-50 border-emerald-200",
-        image: "C:\Users\User\Documents\Hack 2",
+        image: "https://images.unsplash.com/photo-1563805042-7684c8e9e533?auto=format&fit=crop&w=600&q=80",
         delay: "300"
     },
     {
@@ -176,7 +176,7 @@ const products = [
         ingredients: "Curd (buffalo milk), Treacle (kithul syrup).",
         spice: "Mild",
         spiceColor: "text-emerald-600 bg-emerald-50 border-emerald-200",
-        image: "C:\Users\User\Documents\Hack 2",
+        image: "https://images.unsplash.com/photo-1570197781033-0661266e74b3?auto=format&fit=crop&w=600&q=80",
         delay: "300"
     },
     {
@@ -186,7 +186,7 @@ const products = [
         ingredients: "Tea Leaves, Sugar, Milk (optional).",
         spice: "Mild",
         spiceColor: "text-emerald-600 bg-emerald-50 border-emerald-200",
-        image: "C:\Users\User\Documents\Hack 2",
+        image: "https://images.unsplash.com/photo-1576092762791-dd9e2220cad1?auto=format&fit=crop&w=600&q=80",
         delay: "300"
     },
     {
@@ -196,7 +196,7 @@ const products = [
         ingredients: "Rice, Herbal Leaves, Coconut Milk, Garlic, Salt.",
         spice: "Mild",
         spiceColor: "text-emerald-600 bg-emerald-50 border-emerald-200",
-        image: "C:\Users\User\Documents\Hack 2",
+        image: "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=600&q=80",
         delay: "300"
     },
     {
@@ -206,7 +206,7 @@ const products = [
         ingredients: "Mango, Water, Sugar.",
         spice: "Mild",
         spiceColor: "text-emerald-600 bg-emerald-50 border-emerald-200",
-        image: "C:\Users\User\Documents\Hack 2",
+        image: "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&w=600&q=80",
         delay: "300"
     },
     {
@@ -216,7 +216,7 @@ const products = [
         ingredients: "Lemon, Water, Sugar, Salt.",
         spice: "Mild",
         spiceColor: "text-emerald-600 bg-emerald-50 border-emerald-200",
-        image: "C:\Users\User\Documents\Hack 2",
+        image: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=600&q=80",
         delay: "300"
     },
     {
@@ -226,7 +226,7 @@ const products = [
         ingredients: "Milk, Jelly, Basil Seeds, Vermicelli, Ice Cream, Syrup.",
         spice: "Mild",
         spiceColor: "text-emerald-600 bg-emerald-50 border-emerald-200",
-        image: "C:\Users\User\Documents\Hack 2",
+        image: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=600&q=80",
         delay: "300"
     },
     {
@@ -236,7 +236,7 @@ const products = [
         ingredients: "Kurakkan (finger millet), Water, Coconut Milk, Salt.",
         spice: "Mild",
         spiceColor: "text-emerald-600 bg-emerald-50 border-emerald-200",
-        image: "C:\Users\User\Documents\Hack 2",
+        image: "https://images.unsplash.com/photo-1548943487-a2e4f43fb2ba?auto=format&fit=crop&w=600&q=80",
         delay: "300"
     }
 ];

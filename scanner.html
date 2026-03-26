@@ -10,27 +10,29 @@
     <style>
         body {
             font-family: 'Outfit', sans-serif;
-            background-color: #FFF0F0; /* Soft pale peach/pink */
+            background-color: #FFF0F0;
         }
-        /* Updated Glassmorphism utility for the pink navbar */
         .glass {
-            background: rgba(226, 132, 198, 0.95); /* Vibrant Orchid Pink */
+            background: rgba(226, 132, 198, 0.95);
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
             border-bottom: 1px solid rgba(0, 0, 0, 0.1);
         }
-        /* Smooth image zoom on hover */
-        .img-hover-zoom {
-            transition: transform 0.5s ease;
-        }
-        .group:hover .img-hover-zoom {
-            transform: scale(1.08);
-        }
-        /* Custom scrollbar */
+        .img-hover-zoom { transition: transform 0.5s ease; }
+        .group:hover .img-hover-zoom { transform: scale(1.08); }
         ::-webkit-scrollbar { width: 8px; }
         ::-webkit-scrollbar-track { background: #FFF0F0; }
         ::-webkit-scrollbar-thumb { background: #E284C6; border-radius: 10px; }
         ::-webkit-scrollbar-thumb:hover { background: #9E4759; }
+        
+        canvas, #uploaded-image {
+            border-radius: 0.75rem;
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            object-fit: cover;
+        }
     </style>
 </head>
 <body class="text-slate-800 antialiased flex flex-col min-h-screen">
@@ -78,24 +80,6 @@
                 </label>
                 <img id="uploaded-image" class="hidden mb-6" alt="Uploaded preview" />
             </div>
-
-            <div id="camera-section" class="hidden flex-col items-center w-full">
-                <div id="webcam-container" class="mb-6 w-full flex justify-center"></div>
-                <button onclick="captureAndPredict()" class="w-full bg-emerald-600 text-white font-bold py-3 rounded-xl hover:bg-emerald-700 transition-colors shadow-lg">
-                    📸 Capture & Identify
-                </button>
-            </div>
-
-            <div id="upload-section" class="hidden flex-col items-center w-full">
-                <label class="w-full flex flex-col items-center px-4 py-6 bg-white text-emerald-700 rounded-xl shadow-lg tracking-wide border border-emerald-500 cursor-pointer hover:bg-emerald-50 transition-colors mb-6">
-                    <svg class="w-8 h-8" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                        <path d="M16.88 9.1A4 4 0 0 1 16 17H5a5 5 0 0 1-1-9.9V7a3 3 0 0 1 4.52-2.59A4.98 4.98 0 0 1 17 8c0 .38-.04.74-.12 1.1zM11 11h3l-4-4-4 4h3v3h2v-3z" />
-                    </svg>
-                    <span class="mt-2 text-base leading-normal font-semibold">Select an image</span>
-                    <input type='file' class="hidden" id="image-upload" accept="image/*" />
-                </label>
-                <img id="uploaded-image" class="hidden mb-6" alt="Uploaded preview" />
-            </div>
             
             <div id="label-container" class="space-y-3 text-left mt-6 hidden"></div>
         </div>
@@ -109,7 +93,6 @@
         let model, webcam, maxPredictions;
         let currentMode = null;
 
-        // Initialize the model as soon as the page loads
         async function loadModel() {
             const modelURL = URL + "model.json";
             const metadataURL = URL + "metadata.json";
@@ -120,19 +103,16 @@
                 document.getElementById('status-text').innerText = "Choose how you want to scan.";
                 document.getElementById('controls').style.display = 'flex';
                 
-                // Set default mode
                 switchMode('camera');
             } catch (error) {
-                document.getElementById('status-text').innerText = "Error loading model. Are you on a local server?";
+                document.getElementById('status-text').innerText = "Error loading model. Check console for details.";
                 console.error(error);
             }
         }
 
-        // Handle switching between Camera and Upload modes
-        // Handle switching between Camera and Upload modes
         async function switchMode(mode) {
             currentMode = mode;
-            document.getElementById('label-container').innerHTML = ''; // Clear old results
+            document.getElementById('label-container').innerHTML = ''; 
             document.getElementById('label-container').classList.add('hidden');
             
             const btnCam = document.getElementById('btn-camera');
@@ -142,7 +122,6 @@
                 document.getElementById('camera-section').classList.remove('hidden');
                 document.getElementById('upload-section').classList.add('hidden');
                 
-                // Swap to dark slate when active
                 btnCam.classList.replace('bg-transparent', 'bg-slate-900');
                 btnCam.classList.replace('text-slate-900', 'text-white');
                 btnUp.classList.replace('bg-slate-900', 'bg-transparent');
@@ -153,7 +132,6 @@
                 document.getElementById('camera-section').classList.add('hidden');
                 document.getElementById('upload-section').classList.remove('hidden');
                 
-                // Swap to dark slate when active
                 btnUp.classList.replace('bg-transparent', 'bg-slate-900');
                 btnUp.classList.replace('text-slate-900', 'text-white');
                 btnCam.classList.replace('bg-slate-900', 'bg-transparent');
@@ -163,7 +141,6 @@
             }
         }
 
-        // Setup the webcam stream (without predicting yet)
         async function setupWebcam() {
             if (!webcam) {
                 const flip = true; 
@@ -173,13 +150,12 @@
             await webcam.play();
             
             const container = document.getElementById("webcam-container");
-            container.innerHTML = ''; // clear previous canvas if any
+            container.innerHTML = ''; 
             container.appendChild(webcam.canvas);
             
             window.requestAnimationFrame(updateWebcamFrame);
         }
 
-        // Keeps the video feed moving so the user can frame their shot
         function updateWebcamFrame() {
             if (currentMode === 'camera' && webcam) {
                 webcam.update();
@@ -193,10 +169,8 @@
             }
         }
 
-        // Action: User clicks "Capture & Identify"
         async function captureAndPredict() {
             if (!webcam) return;
-            // Freeze the frame by temporarily stopping the update loop
             currentMode = 'processing'; 
             
             document.getElementById('status-text').innerText = "Analyzing...";
@@ -206,7 +180,6 @@
             document.getElementById('status-text').innerText = "Result found! Tap 'Use Camera' to scan again.";
         }
 
-        // Action: User uploads an image
         document.getElementById('image-upload').addEventListener('change', function(event) {
             const file = event.target.files[0];
             if (file) {
@@ -216,7 +189,6 @@
                     imgElement.src = e.target.result;
                     imgElement.classList.remove('hidden');
                     
-                    // Once the image loads on the screen, run the prediction
                     imgElement.onload = async function() {
                         document.getElementById('status-text').innerText = "Analyzing...";
                         const prediction = await model.predict(imgElement);
@@ -228,46 +200,37 @@
             }
         });
 
-        // Action: Reset the scanner to scan a new item
         function resetScanner() {
-            // 1. Hide and clear the results container
             const container = document.getElementById("label-container");
             container.innerHTML = '';
             container.classList.add('hidden');
 
             if (currentMode === 'processing') {
-                // If they were using the camera, unfreeze the live video feed
                 currentMode = 'camera';
                 document.getElementById('status-text').innerText = "Point your camera at the food.";
                 window.requestAnimationFrame(updateWebcamFrame); 
             } else {
-                // If they were uploading, hide the old preview image
                 const imgElement = document.getElementById('uploaded-image');
                 imgElement.src = "";
                 imgElement.classList.add('hidden');
                 
-                // CRUCIAL: Empty the file input so the browser accepts new files
                 document.getElementById('image-upload').value = "";
                 document.getElementById('status-text').innerText = "Select an image to scan.";
             }
         }
-        // Shared function to render the AI results
+
         function displayResults(prediction) {
             const container = document.getElementById("label-container");
             container.innerHTML = '';
             container.classList.remove('hidden');
 
-            // Sort predictions so the highest probability is at the top
             prediction.sort((a, b) => b.probability - a.probability);
-
-            // Grab only the very best result
             const topResult = prediction[0];
             const probabilityScore = Math.round(topResult.probability * 100);
 
             const labelDiv = document.createElement("div");
 
             if (probabilityScore >= 30) {
-                // Uses the soft peach background, vibrant pink border, and mauve text
                 labelDiv.className = "bg-[#FFF0F0] border-2 border-[#E284C6] p-6 rounded-2xl text-center shadow-md transform transition-all";
                 labelDiv.innerHTML = `
                     <div class="text-xs text-[#803875] uppercase tracking-widest font-bold mb-2">Best Match</div>
@@ -277,7 +240,6 @@
                     </div>
                 `;
             } else {
-                // A neutral gray warning if the AI isn't sure
                 labelDiv.className = "bg-slate-100 border-2 border-slate-300 p-6 rounded-2xl text-center shadow-md";
                 labelDiv.innerHTML = `
                     <div class="text-xl font-bold text-slate-800 mb-2">Not quite sure...</div>
@@ -287,7 +249,6 @@
 
             container.appendChild(labelDiv);
 
-            // NEW: Automatically add the "Scan Another Item" reset button
             const resetBtn = document.createElement("button");
             resetBtn.onclick = resetScanner;
             resetBtn.className = "w-full mt-4 bg-slate-200 text-slate-700 font-bold py-3 rounded-xl hover:bg-slate-300 hover:text-slate-900 transition-colors shadow-sm";
@@ -295,7 +256,6 @@
             container.appendChild(resetBtn);
         }
 
-        // Boot it up
         window.onload = loadModel;
     </script>
 </body>
