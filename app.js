@@ -156,7 +156,7 @@ const products = [
         ingredients: "Jelly, Water, Sugar.",
         spice: "Mild",
         spiceColor: "text-emerald-600 bg-emerald-50 border-emerald-200",
-        image: "https://images.unsplash.com/photo-1553530666-ba11a90a1816?auto=format&fit=crop&w=600&q=80",
+        image: "https://media.istockphoto.com/id/483686806/photo/berry-fruit-jelly-with-fresh-berries-summer-dessert.jpg?s=612x612&w=0&k=20&c=PeAEYFlpd5sBmuQ40MTkZIc97_8eNC_tA3JHaKxPgXw=",
         delay: "300"
     },
     {
@@ -166,7 +166,7 @@ const products = [
         ingredients: "Milk, Cream, Sugar, Flavoring.",
         spice: "Mild",
         spiceColor: "text-emerald-600 bg-emerald-50 border-emerald-200",
-        image: "https://images.unsplash.com/photo-1563805042-7684c8e9e533?auto=format&fit=crop&w=600&q=80",
+        image: "https://media.istockphoto.com/id/2153490093/photo/three-glasses-of-ice-cream-with-balls-decorated-on-table.jpg?s=612x612&w=0&k=20&c=LUfk-0kBVxloYyom1lTBWZ7QOPTJJQG7tPsCdHdevwg=",
         delay: "300"
     },
     {
@@ -176,7 +176,7 @@ const products = [
         ingredients: "Curd (buffalo milk), Treacle (kithul syrup).",
         spice: "Mild",
         spiceColor: "text-emerald-600 bg-emerald-50 border-emerald-200",
-        image: "https://images.unsplash.com/photo-1570197781033-0661266e74b3?auto=format&fit=crop&w=600&q=80",
+        image: "https://media.istockphoto.com/id/184917128/photo/curds-and-honey.jpg?s=612x612&w=0&k=20&c=DUtBlDZMEPRUmsKLV1E6sFkBA7H34Vo4ofbvVH97v1c=",
         delay: "300"
     },
     {
@@ -186,7 +186,7 @@ const products = [
         ingredients: "Tea Leaves, Sugar, Milk (optional).",
         spice: "Mild",
         spiceColor: "text-emerald-600 bg-emerald-50 border-emerald-200",
-        image: "https://images.unsplash.com/photo-1576092762791-dd9e2220cad1?auto=format&fit=crop&w=600&q=80",
+        image: "https://media.istockphoto.com/id/1628961567/photo/herbal-green-tea-border-on-wooden-rustic-background-hot-cup-of-jasmine-tea-on-vintage.jpg?s=612x612&w=0&k=20&c=S9XEhtKBHKOXH6TihcE-4CpMT-El5PfairrTIpyFryQ=",
         delay: "300"
     },
     {
@@ -196,7 +196,7 @@ const products = [
         ingredients: "Rice, Herbal Leaves, Coconut Milk, Garlic, Salt.",
         spice: "Mild",
         spiceColor: "text-emerald-600 bg-emerald-50 border-emerald-200",
-        image: "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=600&q=80",
+        image: "https://srilankatravellife.com/wp-content/uploads/2025/12/A-Glass-of-Kola-Kanda-with-Jaggery.webp",
         delay: "300"
     },
     {
@@ -206,7 +206,7 @@ const products = [
         ingredients: "Mango, Water, Sugar.",
         spice: "Mild",
         spiceColor: "text-emerald-600 bg-emerald-50 border-emerald-200",
-        image: "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&w=600&q=80",
+        image: "https://media.istockphoto.com/id/904617420/photo/fresh-mango-smoothie-in-the-glass.jpg?s=612x612&w=0&k=20&c=ogIRn5AfahJNU4W8UmQIZ-mJqL9tgOm9yH_-5WJmkSQ=",
         delay: "300"
     },
     {
@@ -216,7 +216,7 @@ const products = [
         ingredients: "Lemon, Water, Sugar, Salt.",
         spice: "Mild",
         spiceColor: "text-emerald-600 bg-emerald-50 border-emerald-200",
-        image: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=600&q=80",
+        image: "https://media.istockphoto.com/id/2216886533/photo/glasses-of-ice-with-lemon-soda-made-from-fruit-juice-next-to-a-cutting-board-with-lemon.jpg?s=612x612&w=0&k=20&c=iYskzW1OMaBiZAbgGNtmI6kiIfPHze1eUkiigyfAIpA=",
         delay: "300"
     },
     {
@@ -226,7 +226,7 @@ const products = [
         ingredients: "Milk, Jelly, Basil Seeds, Vermicelli, Ice Cream, Syrup.",
         spice: "Mild",
         spiceColor: "text-emerald-600 bg-emerald-50 border-emerald-200",
-        image: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=600&q=80",
+        image: "https://media.istockphoto.com/id/1152134425/photo/falooda-faluda-is-a-popular-indian-dessert.jpg?s=612x612&w=0&k=20&c=fkRDvYWcPLDaU1zByysSTV9DsUyxGP2AUHBWZJSz2sk=",
         delay: "300"
     },
     {
@@ -236,7 +236,7 @@ const products = [
         ingredients: "Kurakkan (finger millet), Water, Coconut Milk, Salt.",
         spice: "Mild",
         spiceColor: "text-emerald-600 bg-emerald-50 border-emerald-200",
-        image: "https://images.unsplash.com/photo-1548943487-a2e4f43fb2ba?auto=format&fit=crop&w=600&q=80",
+        image: "https://d1uz88p17r663j.cloudfront.net/original/fedae75d14d3afdb4c1e62bc21a4ab89_kurakkan-kenda.jpg",
         delay: "300"
     }
 ];
