@@ -26,7 +26,7 @@ const products = [
         ingredients: "Rice, Egg, Vegetables, Garlic, Soy Sauce, Pepper, Oil.",
         spice: "Mild",
         spiceColor: "text-emerald-600 bg-emerald-50 border-emerald-200",
-        image: "https://images.unsplash.com/photo-1559742811-822873691df8?auto=format&fit=crop&w=600&q=80",
+        image: "https://media.istockphoto.com/id/627794904/photo/breakfast-fried-egg-with-rice.jpg?s=612x612&w=0&k=20&c=Mjc84YWx6QKBssvWlloNIo8F0aru7Rpeq4m-IyS4kus=",
         delay: "300"
     },
     {
@@ -36,7 +36,7 @@ const products = [
         ingredients: "Rice Flour, Coconut Milk, Yeast, Sugar, Salt.",
         spice: "Mild",
         spiceColor: "text-emerald-600 bg-emerald-50 border-emerald-200",
-        image: "https://images.unsplash.com/photo-1625362217305-3b04cbca4837?auto=format&fit=crop&w=600&q=80",
+        image: "https://media.istockphoto.com/id/543978524/photo/sri-lankan-egg-hopper.jpg?s=612x612&w=0&k=20&c=7UI9bwvKcowTSZ-fDdyqR-y_2Lsitr-WncwIynbcfxs=",
         delay: "300"
     },
     {
@@ -46,7 +46,7 @@ const products = [
         ingredients: "Noodles, Vegetables, Egg/Chicken, Garlic, Soy Sauce, Chilli Sauce.",
         spice: "Mild",
         spiceColor: "text-emerald-600 bg-emerald-50 border-emerald-200",
-        image: "https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=600&q=80",
+        image: "https://media.istockphoto.com/id/1169736515/photo/homemade-delicious-semiya-upma.jpg?s=612x612&w=0&k=20&c=tkri0N_v8zrswh736Ab_neVIw7Bjv2dzXpsJCt_2IO0=",
         delay: "300"
     },
     {
@@ -56,7 +56,7 @@ const products = [
         ingredients: "Rice Flour, Water, Salt.",
         spice: "Mild",
         spiceColor: "text-emerald-600 bg-emerald-50 border-emerald-200",
-        image: "https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?auto=format&fit=crop&w=600&q=80",
+        image: "https://media.istockphoto.com/id/1686581892/photo/idiyappam-with-chicken-curry.jpg?s=612x612&w=0&k=20&c=Z8p6agfsdEg0mjRlu4Gw-eWYUDwZ-NkG6sqsg4GMZx8=",
         delay: "300"
     },
     {
@@ -66,7 +66,7 @@ const products = [
         ingredients: "Roti Dough, Mixed Vegetables, Onion, Spices.",
         spice: "Medium",
         spiceColor: "text-amber-500 bg-amber-50 border-amber-200",
-        image: "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=600&q=80",
+        image: "https://media.istockphoto.com/id/1473237858/photo/srilankan-vegetable-roti-in-plate.jpg?s=612x612&w=0&k=20&c=geOmfUz24cxrqnh65186FgmGTnZH55xrKVJpaEvJ1UA=",
         delay: "300"
     },
     {
@@ -76,7 +76,7 @@ const products = [
         ingredients: "Bun, Fish Filling, Potato, Onion, Spices.",
         spice: "Medium",
         spiceColor: "text-amber-500 bg-amber-50 border-amber-200",
-        image: "https://images.unsplash.com/photo-1612196808214-b8e1d6145a8c?auto=format&fit=crop&w=600&q=80",
+        image: "https://media.istockphoto.com/id/1331499669/photo/fish-buns-are-arranged-in-a-round-steel-baking-tray-homemade-delicious-triangular-shaped.jpg?s=612x612&w=0&k=20&c=OyMw3R_HcS0cVdFDaHbjFfCZGtEZeid-rYfvC8psJEI=",
         delay: "300"
     },
     {
@@ -86,7 +86,7 @@ const products = [
         ingredients: "Roti Wrapper, Egg, Vegetables, Onion, Spices.",
         spice: "Medium",
         spiceColor: "text-amber-500 bg-amber-50 border-amber-200",
-        image: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=600&q=80",
+        image: "https://media.istockphoto.com/id/1447122865/photo/homemade-spring-rolls-on-a-bed-of-lettuce-in-a-white-plate-on-a-wooden-background.jpg?s=612x612&w=0&k=20&c=Vnv6pULBiCnO3zr38nPCKo-ayFnDenPqdep_iNpKHeY=",
         delay: "300"
     },
     {
@@ -96,7 +96,7 @@ const products = [
         ingredients: "Fish/Meat, Potato, Onion, Spices, Breadcrumbs.",
         spice: "Medium",
         spiceColor: "text-amber-500 bg-amber-50 border-amber-200",
-        image: "https://images.unsplash.com/photo-1541529086526-db283c563270?auto=format&fit=crop&w=600&q=80",
+        image: "https://media.istockphoto.com/id/1174614327/photo/corn-tikki-or-pakora-pakoda.jpg?s=612x612&w=0&k=20&c=QkcQRXmj-eN055A0-rKm7g5pXfD1y94P9-wTy_rpwcw=",
         delay: "300"
     },
     {
@@ -106,7 +106,7 @@ const products = [
         ingredients: "Pastry, Chicken/Fish/Vegetable Filling, Onion, Spices.",
         spice: "Mild",
         spiceColor: "text-emerald-600 bg-emerald-50 border-emerald-200",
-        image: "https://images.unsplash.com/photo-1601050690117-94f5f6af3bf3?auto=format&fit=crop&w=600&q=80",
+        image: "https://media.istockphoto.com/id/1161677008/photo/latin-american-fried-empanadas-with-tomato-and-avocado-sauces-top-view.jpg?s=612x612&w=0&k=20&c=zkj70xzhKcLUHB5Bq47qnoAoqFFxXJMBwD6zBnQ3YTY=",
         delay: "300"
     },
     {
@@ -116,7 +116,7 @@ const products = [
         ingredients: "Ural Dal, Onion, Green Chilli, Curry Leaves, Spices.",
         spice: "Medium",
         spiceColor: "text-amber-500 bg-amber-50 border-amber-200",
-        image: "https://images.unsplash.com/photo-1589301760014-d929f39ce9b0?auto=format&fit=crop&w=600&q=80",
+        image: "https://media.istockphoto.com/id/2148274342/photo/kombadi-vade-chicken-vade-traditional-marathi-non-vegetarian-food-maharashtra.jpg?s=612x612&w=0&k=20&c=MGp5LnhErKTeMuu9E1z62ACG573fXG3M1VUF1PN6-nw=",
         delay: "300"
     },
     {
@@ -126,7 +126,7 @@ const products = [
         ingredients: "Coconut Milk, Jaggery, Eggs, Spices(cardamom,nutmeg).",
         spice: "Mild",
         spiceColor: "text-emerald-600 bg-emerald-50 border-emerald-200",
-        image: "https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=600&q=80",
+        image: "https://media.istockphoto.com/id/2175565041/photo/watalappam-sri-lankan-coconut-custard-pudding.jpg?s=612x612&w=0&k=20&c=g1t_VV5-FSreGITqrBqKULQkvNIWsjtO3YquTkTaP8s=",
         delay: "300"
     },
     {
@@ -136,7 +136,7 @@ const products = [
         ingredients: "Flour, Cocoa Powdwer, Sugar, Eggs, Butter, Milk.",
         spice: "Mild",
         spiceColor: "text-emerald-600 bg-emerald-50 border-emerald-200",
-        image: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=600&q=80",
+        image: "https://media.istockphoto.com/id/1370520449/photo/slice-of-chocolate-cake-with-glaze.jpg?s=612x612&w=0&k=20&c=KK-h7w4l0FNA0YMWvkr1X8UrAAB77z0f5tTByBYgReM=",
         delay: "300"
     },
     {
