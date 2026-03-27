@@ -6,7 +6,7 @@ const products = [
         ingredients: "Steamed rice, Mixed Vegetables, Coconut Milk, Curry Powder, Onion, Garlic, Chilli, Spices.",
         spice: "Medium",
         spiceColor: "text-amber-500 bg-amber-50 border-amber-200",
-        image: "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=600&q=80", 
+        image: "https://media.istockphoto.com/id/541603774/photo/sri-lankan-rice-and-curry-dish.jpg?s=612x612&w=0&k=20&c=osvrG7ELjUdy8PKDSO0_SyL8GMfc1fM89et6YNnEqgs=", 
         delay: "100"
     },
     {
@@ -16,7 +16,7 @@ const products = [
         ingredients: "Roti, Chicken, Egg, Vegetables, Onion, Garlic, Soy Sauce, Spices.",
         spice: "Medium",
         spiceColor: "text-amber-500 bg-amber-50 border-amber-200",
-        image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=600&q=80",
+        image: "https://media.istockphoto.com/id/1297485179/photo/typical-kottu-dish-from-sri-lankan-street-food.jpg?s=612x612&w=0&k=20&c=sEEyd0CHgpN1gk7X2isg9rTSznOu7lHlvlcaV_KaszM=",
         delay: "200"
     },
     {
